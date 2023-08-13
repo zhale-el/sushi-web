@@ -108,6 +108,11 @@ img {
   padding-block: 5rem 1rem;
 }
 
+.section__title {
+  font-size: var(--h1-font-size);
+  font-family: var(--title-font);
+  margin-bottom: 1.5rem;
+}
 .section__title,
 .section__subtitle {
   text-align: center;
