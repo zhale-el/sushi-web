@@ -177,6 +177,18 @@ img {
   cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    background-color: var(--body-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-block: 3.5rem;
+    box-shadow: 0 8px 20px hsla(19, 64%, 24%, 0.1);
+  }
+}
+
 /* Show menu */
 
 /* Change background header */
