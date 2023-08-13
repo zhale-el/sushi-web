@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -15,7 +22,48 @@
           <img src="./img/logo.png" alt="logo image" />
           sushi
         </a>
-        <div class="nav__menu" id="nav_menu"></div>
+        <div class="nav__menu" id="nav_menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">about us</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#populer" class="nav__link">populer</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#recently" class="nav__link">Recently</a>
+            </li>
+          </ul>
+
+          <!-- --- close button --- -->
+          <div class="nav__close" id="nav_close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <img
+            src="./img/leaf-branch-4.png"
+            alt="nav image"
+            class="nav__img-1"
+          />
+          <img
+            src="./img/leaf-branch-3.png"
+            alt="nav imge"
+            class="nav__img-2"
+          />
+        </div>
+        <div class="nav__buttons">
+          <!-- ---  Theme change button  --- -->
+          <!-- <i class="fa-regular fa-moon" id="theme_button"></i> -->
+
+          <!-- --- toggle button --- -->
+          <div class="nav__toggle" id="nav_toggle">
+            <i class="fa-solid fa-list"></i>
+          </div>
+        </div>
       </nav>
     </header>
 
