@@ -83,9 +83,16 @@ h3 {
   font-weight: var(--font-medium);
 }
 
+a {
+  display: block;
+  height: 89px;
+  width: 96px;
+}
+
 img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*=============== THEME ===============*/
@@ -99,6 +106,10 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 
+.container {
+  max-width: 1024px;
+  margin-inline: 1.5rem;
+}
 .grid {
   display: grid;
   gap: 1.5rem;
@@ -122,6 +133,16 @@ img {
 }
 
 /*=============== HEADER & NAV ===============*/
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--body-color);
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  transition: box-shadow 0.3s, background 0.4s;
+}
 
 /* Show menu */
 
