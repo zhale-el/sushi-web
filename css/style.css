@@ -87,3 +87,66 @@ img {
   width: 100%;
   height: auto;
 }
+
+/*=============== THEME ===============*/
+
+/*========== Variables Dark theme ==========*/
+
+/*========== 
+    Color changes in some parts of 
+    the website, in light theme
+==========*/
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 1rem;
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+.main {
+  overflow: hidden; /* For animation ScrollReveal */
+}
+
+/*=============== HEADER & NAV ===============*/
+
+/* Show menu */
+
+/* Change background header */
+
+/* Active link */
+
+/*=============== HOME ===============*/
+
+/*=============== BUTTON ===============*/
+
+/*=============== ABOUT ===============*/
+
+/*=============== POPULAR ===============*/
+
+/*=============== RECENTLY ===============*/
+
+/*=============== NEWSLETTER ===============*/
+
+/*=============== FOOTER ===============*/
+
+/*=============== SCROLL BAR ===============*/
+
+/*=============== SCROLL UP ===============*/
+
+/* Show Scroll Up*/
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+/* For medium devices */
+
+/* For large devices */
