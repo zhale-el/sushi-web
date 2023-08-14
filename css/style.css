@@ -462,7 +462,55 @@ img {
   transform: rotate(-30deg);
 }
 /*=============== NEWSLETTER ===============*/
-
+.newsLetter__container {
+  position: relative;
+}
+.newsLetter__content {
+  position: relative;
+  background-color: hsl(19, 24%, 15%);
+  border-radius: 2.5rem;
+  padding: 0.5rem 1rem 3rem;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.newsLetter__img {
+  width: 250px;
+  position: absolute;
+  top: -4.5rem;
+  left: -8rem;
+}
+.newsLetter__data .section__title {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.newsLetter__form {
+  background-color: #fff;
+  padding: 5px 5px 5px 16px;
+  border-radius: 4rem;
+  display: flex;
+  column-gap: 0.5rem;
+}
+.newsLetter__input,
+.newsLetter__button {
+  font-family: var(--body-font);
+  border: none;
+  outline: none;
+}
+.newsLetter__input {
+  width: 90%;
+  color: var(--text-color);
+}
+.newsLetter__button {
+  cursor: pointer;
+}
+.newsLetter__spinach {
+  width: 30px;
+  position: absolute;
+  right: 2rem;
+  bottom: -2rem;
+  transform: rotate(45deg);
+}
 /*=============== FOOTER ===============*/
 
 /*=============== SCROLL BAR ===============*/
