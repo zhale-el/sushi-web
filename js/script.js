@@ -44,3 +44,15 @@ const scrollHeader = () => {
 };
 
 window.addEventListener("scroll", scrollHeader);
+
+// < ====== show scroll up ====== >
+const scrollUp = () => {
+  const scrollUp = document.getElementById("scroll_up");
+
+  //when scrollUp is higher than 350 viewport height , add the show-scroll class to the a tag with the scrollup
+  this.scrollY >= 350
+    ? scrollUp.classList.add("show_scroll")
+    : scrollUp.classList.remove("show_scroll");
+};
+
+window.addEventListener("scroll", scrollUp);
