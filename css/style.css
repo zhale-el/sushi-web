@@ -84,12 +84,6 @@ h3 {
   font-weight: var(--font-medium);
 }
 
-/* .nav__logo {
-  display: block;
-  height: 89px;
-  width: 96px;
-} */
-
 img {
   max-width: 100%;
   height: auto;
@@ -97,7 +91,28 @@ img {
 
 /*=============== THEME ===============*/
 
+.nav__buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.change_theme {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transform: color 0.3s;
+}
 /*========== Variables Dark theme ==========*/
+
+body.dark_theme {
+  /* === colors === */
+  --body-color: hsl(19, 12%, 8%);
+  --container-color: hsl(19, 10%, 10%);
+  --first-color: hsl(19, 64%, 58%%);
+  --first-color-alt: hsl(19, 64%, 54%);
+  --title-color: hsl(19, 24%, 85%);
+  --text-color: hsl(19, 16%, 65%);
+}
 
 /*========== 
     Color changes in some parts of 
