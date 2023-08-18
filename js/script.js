@@ -35,7 +35,6 @@ navLink.forEach((n) => {
 
 const scrollHeader = () => {
   const header = document.getElementById("header");
-  console.log(header);
 
   // when the scroll is greater than 50 viewport height ,add the bg_header class to the header tag
   this.scrollY >= 50
@@ -62,18 +61,20 @@ const sections = document.querySelectorAll("section[id]");
 
 const scrollActive = () => {
   const scrollY = window.pageYOffset;
-  sections.forEach((current) => {
-    const sectionHeight = current.offsetHight,
-      sectionTop = current.offsetTop - 58,
-      sectionId = current.getAttribute("id"),
-      sectionClass = document.querySelectorAll(
-        "nav__menu a[href*=" + sectionId + "["
-      );
 
-    if (scrollY > sectionTop && scrollY <= sectionHeight) {
-      sectionClass.classList.add("active-link");
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 58;
+    const sectionId = current.getAttribute("id");
+    const sectionsClass = document.querySelector(
+      ".nav__menu a[href*=" + sectionId + "]"
+    );
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      sectionsClass.classList.add("active-link");
     } else {
-      sectionClass.classList.remove("active-link");
+      sectionsClass.classList.remove("active-link");
     }
   });
 };
+window.addEventListener("scroll", scrollActive);
