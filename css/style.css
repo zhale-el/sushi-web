@@ -765,4 +765,30 @@ body.dark_theme {
   }
 }
 
-/* For large devices */
+@media screen and (min-width: 767px) {
+  .nav {
+    column-gap: 3rem;
+  }
+  .nav__toggle,
+  .nav__close,
+  .nav__imq,
+  .nav__img-2 {
+    display: none;
+  }
+  .nav__list {
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+  .nav__menu {
+    margin-left: auto;
+  }
+  .dark_theme .nav__menu {
+    box-shadow: none;
+  }
+  .popular__container {
+    grid-template-columns: repeat(2, 250px);
+  }
+  .footer__content {
+    grid-template-columns: repeat(4, max-content);
+  }
+} /* For large devices */
