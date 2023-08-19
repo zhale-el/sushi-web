@@ -108,7 +108,7 @@ body.dark_theme {
   /* === colors === */
   --body-color: hsl(19, 12%, 8%);
   --container-color: hsl(19, 10%, 10%);
-  --first-color: hsl(19, 64%, 58%%);
+  --first-color: hsl(19, 64%, 58%);
   --first-color-alt: hsl(19, 64%, 54%);
   --title-color: hsl(19, 24%, 85%);
   --text-color: hsl(19, 16%, 65%);
@@ -118,6 +118,27 @@ body.dark_theme {
     Color changes in some parts of 
     the website, in light theme
 ==========*/
+
+.dark_theme .bg_header,
+.dark_theme .nav__menu,
+.dark_theme .scrollUp {
+  box-shadow: 0 2px 8px hsla(19, 64%, 4%, 0.5);
+}
+.dark_theme .popular__card {
+  box-shadow: 0 8px 20px hsla(19, 64%, 4%, 0.2);
+}
+.dark_theme .newsLetter__content {
+  background-color: var(--container-color);
+}
+.dark_theme::-webkit-scrollbar {
+  background-color: hsl(19, 8%, 15%);
+}
+.dark_theme::-webkit-scrollbar-thumb {
+  background-color: hsl(19, 8%, 25%);
+}
+.dark_theme::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(19, 8%, 35%);
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 
